@@ -1,13 +1,18 @@
-n = int(input("Whole Number? "))
+Num = int(input("Whole Number? "))
 
 # -1 or less
-if n <= -1:
-    print("LI")
+def measu(n):
+    if n <= -1:
+        return "LO"
+    # 0 or greater, less than 10
 
-# 0 or greater, less than 10
-elif 0 <= n < 10:
-    print("MI")
+    elif 0 <= n < 10:
+        return "MI"
+    # greater than or equal to 10
 
-# greater than or equal to 10
-else: ## n >= 10:
-    print("HI")
+    else: ## n >= 10:
+        return "HI"
+        
+    #number in, return number
+
+print(measu(Num))

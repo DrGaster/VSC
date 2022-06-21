@@ -1,8 +1,12 @@
 name = input("Name? ")
 
-Siblings = ["Gary", "gary", "Glen", "glen", "Gina", "gina"]
+Siblings = ["gary", "glen", "gina"]
 
-if name in Siblings:
-    print(name + " is a sibling!")
-else:
-    print(name + " is not a sibling...")
+#method on input
+def sib(person):
+    if person.lower() in Siblings:
+        return person + " is a sibling!"
+    else:
+        return person + " is not a sibling..."
+
+print(sib(name))
