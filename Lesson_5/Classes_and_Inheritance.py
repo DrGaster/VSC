@@ -2,6 +2,7 @@ class Block:
 
     tooltype = "Pickaxe"
     num_of_blocks = 0
+    damage = 1
 
     def __init__(self, name, hardness, resistance, damage, tooltype):
         self.name = name
@@ -17,12 +18,13 @@ class Block:
     def __str__(self):
         return "Block: {}\nHarvest Tool: {}".format(self.name, self.tooltype)
 
-    def getColor(self): # Getter
+    def getdamage(self): # Getter
         return self.damage
 
-    def setColor(self, newColor): # Setter
-        self.damage = newColor
-        return "Color has been set to " + newColor
+    def setDamage(self, newDamage): # Setter
+        self.damage = newDamage
+        return "Damage has been set to " + newDamage
+
 
     @classmethod
     def light(cls, level):
@@ -39,8 +41,6 @@ class Block:
     #         return "Day"
     #     return "Night"
 
-class temp():
-    pass
 class itemstack(Block):
     def __init__(self, name, hardness, resistance, damage, tooltype, state):
         super().__init__(name, hardness, resistance, damage, tooltype)
@@ -51,7 +51,7 @@ Coal = Block('Block of Coal', '5', '6', '1', 'pickaxe')
 Bucket_of_Water = itemstack('Bucket of Water', '0', '0', '1', 'fist', 'liquid')
 print(Ruby.__repr__())
 print(Ruby.__str__())
-# createblock = str(input("Name-Hardness-Resistance-Color-Tooltype\n"))
+# createblock = str(input("Name-Hardness-Resistance-Damage-Tooltype\n"))
 # newblock = Block.fromstring(createblock)
 # print(Ruby_Block.name)
 # print(Coal_Block.name)
@@ -68,9 +68,9 @@ print(Ruby.__str__())
 # print(Coal.resistance)
 
 # print(Ruby.damage)
-# print(Ruby.getColor())
-# print(Ruby.setColor('SKY BLUE'))
-# print(Ruby.getColor())
+# print(Ruby.getdamage())
+# print(Ruby.setDamage('SKY BLUE'))
+# print(Ruby.getdamage())
 # print(Ruby.tooltype)
 # print(Block.num_of_blocks)
 # print('\n')
