@@ -15,7 +15,7 @@ print(Ruby.__str__())
 # newblock = Block_data.fromstring(createblock)
 # print(Ruby_Block.name)
 # print(Coal_Block.name)
-
+print(dir(Block_data))
 # print(Bucket_of_Water.name)
 
 # import datetime
