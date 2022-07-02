@@ -28,7 +28,7 @@ print(dir(Block_data))
 # print(Coal.resistance)
 
 # print(Ruby.damage)
-# print(Ruby.getdamage())
+# print(Ruby.getdamage())   
 # print(Ruby.setDamage('SKY BLUE'))
 # print(Ruby.getdamage())
 # print(Ruby.tooltype)
