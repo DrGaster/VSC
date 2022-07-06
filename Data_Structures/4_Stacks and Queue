@@ -1,0 +1,16 @@
+Stacks
+last in first out
+node add, set node next
+change top pointer
+
+queues
+first in first out
+
+remove head
+add tail
+if head empty, queue is empty
+if empty node is head
+
+if tail is not null
+node is tail
+node point to tail
