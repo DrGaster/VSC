@@ -1,0 +1,4 @@
+ClassNames every capital letter is new word;
+semicolon is end of sentence;
+methodNames are capital letter seperate words, first letter is lower case first word;
+;
