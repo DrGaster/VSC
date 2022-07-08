@@ -1,4 +1,4 @@
-package com.xtalegaster.tutorialmod;
+package bbxtalegaster.tutorialmod;
 
 import com.xtalegaster.tutorialmod.proxy.CommonProxy;
 import com.xtalegaster.tutorialmod.util.Reference;

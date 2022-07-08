@@ -1,4 +1,4 @@
-package com.xtalegaster.tutorialmod.proxy;
+package bbxtalegaster.tutorialmod.proxy;
 
 public class CommonProxy {
 
